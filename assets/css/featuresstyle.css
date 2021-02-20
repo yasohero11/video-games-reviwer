@@ -1,0 +1,466 @@
+#backHomeButton{
+  z-index: 1;
+  position: fixed;
+  top :20px;
+  left: 20px;
+  padding: 0px;
+  border-radius: 30px;
+
+}
+#backHomeButton i{
+  font-size: 60px;
+}
+/*-------------------------------------------------------*/
+#fimg{border: none;}
+.hcrad{
+  position: relative;
+  width: 100%;
+}
+.middleCrad .card{
+  margin: 30px 0px;
+
+}
+.middleCrad{
+  padding: 20px;
+}
+
+.card-img-overlay{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  width: 700px;
+  
+}
+
+
+@media only screen and (min-width: 961px) {
+  #fp {
+   text-align: center;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #fp{
+   text-align: center;
+    
+  }
+}
+
+
+
+@media only screen and (min-width: 961px) {
+  #fimg {
+   height: 700px;
+   border:black;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #fimg {
+   border:black;
+    height: 300px;
+  }
+}
+
+
+body{
+    
+   
+    
+    
+}
+/*         HEADER               */
+
+
+#fhead{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 60Px;
+    text-align: center;
+}
+
+#fhead span{
+    display: table-cell;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+#fhead span:nth-child(1)
+{
+    animation-delay: 0s;
+    
+}
+#fhead span:nth-child(2)
+{
+    animation-delay: 0.25s;
+    
+}
+#fhead span:nth-child(3)
+{
+    animation-delay: 0.5s;
+    
+}
+#fhead span:nth-child(4)
+{
+    animation-delay: 0.75s;
+    
+}
+#fhead span:nth-child(5)
+{
+    animation-delay: 1s;
+    
+}
+#fhead span:nth-child(6)
+{
+    animation-delay: 1.25s;
+    
+}
+#fhead span:nth-child(7)
+{
+    animation-delay: 1.5s;
+    
+}
+#fhead span:nth-child(8)
+{
+    animation-delay: 1.75s;
+    
+}
+
+@keyframes animate
+{
+    0%,100%{
+        color: #fff;
+        filter: :blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+    5%,95%{
+        color: #111;
+        filter: :blur(0px);
+        text-shadow: none;
+    }
+}
+
+
+
+
+
+.container2{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%; 
+    display: inline-block;
+}
+ #fp{
+  text-transform: uppercase;
+  display: block;
+    
+}
+#fp{
+  
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  
+  position: relative;
+  animation: text 2s 1;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 15px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+
+
+.header {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 6rem;
+	font-weight:  100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+/******************************************************************/
+
+
+
+.container3{
+  text-align: center;
+  
+  top: 50%;
+  left: 50%;
+ 
+
+    display: inline-block;
+}
+ #Sp{
+  text-transform: uppercase;
+  display: block;
+    
+}
+#Sp{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  
+  margin-bottom: 20px;
+  margin-top: 10px;
+  
+  position: relative;
+}
+
+#Scard {
+   background-color:#232527;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Scard {
+   width: 100%;
+   margin-bottom: 50px;
+  }
+}
+
+
+
+#Sh5{color: white}
+#Sp{color: white}
+#Ssmall{margin-left: 50px;}
+@media only screen and (min-width: 961px) {
+  #Sh5 {
+   text-align: center; margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Sh5 {
+    text-align: center;
+    
+  }
+}
+@media only screen and (min-width: 961px) {
+  #Sp {
+   text-align: center;margin-left: 50px ;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Sp {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 961px) {
+  #Simg {
+   height: 400px; width: 500px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Simg {
+    width: 357px;
+  }
+  #backHomeButton i{
+    font-size: 40px;
+    border-radius: 50px;
+    padding-top: 1px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Simg {
+    width: 100%;height: 260px;
+    
+  }
+}
+@media(max-width:730px){
+  #fhead{
+    font-size: 50px;
+  }
+  #fp{
+    font-size: 17px;
+  }
+}
+@media(max-width:514px){
+  #fhead{
+    font-size: 23px;
+  }
+  #fp{
+    font-size: 7px;
+  }
+ #fimg{
+   
+   height: 180px;
+ }
+ .card-img-overlay{
+
+   height: 70px;
+ }
+}
+
+
+/*********************************************************************/
+.flip-card {
+  background-color: transparent;
+ margin-top: 100px;  
+  width: 300px;
+  height: 200px;
+  border: none;
+  display: inline-block;
+  padding-right: 80px;
+  margin-left: 100px;    
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/********************************************************************/
+/*
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+*/
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+  
+    z-index: 0;
+    border-radius: 10px;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*********************************************************************/
+
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+footer h5,i{color: white}

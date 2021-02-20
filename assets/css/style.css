@@ -1,0 +1,500 @@
+
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+
+
+#description {
+    margin-top: 50px;
+    background: linear-gradient(to right bottom, #f0c27b, #4b1248);
+    /*linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.4s;
+}
+
+.carousel-inner {
+width: 100%;
+}
+.card{
+    height: 180px;
+    margin-top: 20px;
+    
+}
+.card i {
+    font-size: 23px;
+    margin-top:30px;
+}
+.card span {
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 18px;
+    
+}
+#consoles{
+    padding: 20px;
+}
+#goToContiner{
+    background:linear-gradient(to right, #12c2e9, #c471ed, #f64f59); 
+    height: 600px; 
+    position: relative;
+}
+#goTo{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+#demo{
+    position: relative;
+}
+
+#demo h1{
+    background: linear-gradient(140deg, #ff2600 40%, #2f00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Arial, Helvetica, sans-serif;
+
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.hot-news{
+    width: 250px;
+    margin: 10px ;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.hot-news img{
+    width: 100%;
+    height: 160px;
+    transition: 0.8s;
+}
+.hot-news:hover img{
+    transform: scale(1.2);
+}
+#news-feed{
+    z-index: 2;
+    margin-top: 150px ;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    
+}
+/*      mood 1
+.carousel-indicators li {
+    width: 15px;
+  height:15px;
+  border-radius: 100%;
+    background-image: linear-gradient(140deg, #ff00cc 40%, #333399 );
+margin-left: 10px;
+margin-right:10px ;
+    transition: 0.5s;
+    border:none;
+  }
+
+
+  .carousel-indicators li:hover {
+    width: 20px;
+    height: 20px;
+  }
+  */
+
+/*    mood 2 */
+#demo .carousel-indicators li {
+  width: 70px;
+  height:3px;
+  border-radius:50px;
+  background-image: linear-gradient(140deg, #11998e, #38ef7d);   
+  margin-left: 10px;
+  margin-right:10px ;
+  transition: 0.5s;
+  border:none;
+  }
+
+
+/*
+#loginBtn::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#12E800;
+    opacity: 0.3;
+    filter: blur(2px)
+
+}
+*/
+/*
+#loginBtn:hover{
+    transform: scale(1.1);
+    border-bottom: white solid 1.5px 
+}
+*/
+.contant{
+ width: 100%;
+ height: 850px;
+ position: relative;
+}
+#look1{
+    background: url(https://fsb.zobj.net/crop.php?r=IvIMD4O-ots5tMSohqaj3xflhWzq5bygbseWd5BoKd3w-vHxQxkH3nPPM3HE5g0uZ-kSHBpVIZ6WgPy6hO_YBbyIHH4OdqoRvVY7s4LS9G8gRapG01SDILFP0Q6srqnIrypV09NtnYyupB0OTOz2cr7QhrchcBDgR15WggXzeMDMtHVU10OKeSWQWWc) no-repeat center center  ;
+    background-size: 100% 100% ;
+}
+#look2{
+     
+ background: url(https://vignette.wikia.nocookie.net/callofduty/images/7/76/Game_cover_art_BOIII.jpg/revision/latest?cb=20160211194000) no-repeat center center  ;
+ background-size: 100% 100% ;
+
+}
+
+#look .col-md-4{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contant * {
+    float: left;
+    clear: both;
+}
+.contant > p{
+    width: 90%;
+    font-size: 20px;
+}
+.contant hr{
+    width: 80%; 
+}
+.contant h3{
+    font-size: 35px;
+    color: whitesmoke;
+}
+.sub-contant .btn-success{
+    width: 300px;
+    padding: 6px;
+    margin-bottom: 2px;
+    display: block;
+    border-radius: 15px;
+}
+.contant p{
+    color: white;
+    font-size: 18px;
+    width: 90%;
+}
+
+.hide-on-hover{
+    position: absolute;
+    top: 80%; left:10px;
+    transform: translate(0%,-50%); 
+    width: 90%;
+}
+
+.show-on-hover{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 90%;
+    transition: .7s;
+}
+
+.sub-contant{
+    background: rgb(0,0,0,0.7);
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contant:hover .sub-contant{
+    visibility: visible;   
+}
+
+.contant:hover .show-on-hover{
+    bottom: 200px;
+}
+
+.contant:hover .hidecontent{
+	display: none;
+}
+
+.sub-contant p {
+    width: 90%;
+    margin-top: 50px;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.sub-contant:hover p {
+    visibility: visible;
+    margin-top: 7px;
+}
+#demo2{
+    height: 850px;
+}
+
+#demo2 img{
+    height: 100%;
+    width: 100%;
+}
+#demo2 .carousel-item{
+    height: 100%;
+}
+#demo2 ul{
+    padding: 0px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+#demo2 .carousel-indicators li {
+    width: 20px;
+    height:7px;
+    float: left;
+    border-radius:50px;
+    background:black;
+    margin-left: 10px;
+    margin-right:10px ;
+    border:2px solid white;
+}
+#demo2 .carousel-caption{
+    position: absolute;
+    top: 70%; left:10%;
+    width: 250px;
+    font-size: 22px;
+    transform: translate(-10%,-50%);   
+}
+#demo2 .carousel-caption *{
+    float: left;
+}
+#demo2 .carousel-caption p{
+    text-align: left;
+}
+#demo2 .carousel-caption button{
+    width: 150px;
+    border-radius: 15px;
+}
+.on-hover-move{
+    background: url(https://cdna.artstation.com/p/assets/covers/images/001/207/058/medium/suke-5.jpg?1442211338) no-repeat center center ;
+    background-size:100% 100%;
+    position: relative;
+    height: 500px;
+}
+.on-hover-move:first-child{
+    background: url(https://www.slashgear.com/wp-content/uploads/2019/08/Destiny-2-slashgear-1267x720.jpg) no-repeat center center ;
+
+    
+}
+
+.on-hover-move:last-child img{
+    width: 400px;
+    bottom:-50px;
+    left: -100px;
+}
+
+.on-hover-move img{
+    position: absolute;
+    transition: 0.7s ease-in-out;
+}
+.on-hover-move:first-child img{
+    bottom: 0;
+    right: -100px ;
+}
+.on-hover-move:first-child:hover img{
+    right: -150px;
+    transform: rotate(2deg);
+}
+.on-hover-move:last-child:hover img{
+    left: -200px;
+    transform: rotate(-5deg);
+  
+}
+@media(max-width: 1363px){
+    .on-hover-move{
+        height: 350px;
+    }
+}
+
+@media(max-width: 806px){
+    .on-hover-move{
+        height: 300px;
+    }
+   
+}
+@media(max-width: 755px){
+    .on-hover-move{
+        height: 500px;
+    }
+    .on-hover-move:last-child img{
+        width: 300px;
+        bottom:5%;
+        left: 15%;
+        transform: translate(-10%,-7%);
+    }
+    .on-hover-move:last-child:hover img{
+        left: 20px;
+        bottom: -10px;
+        transform: rotate(-10deg);
+      
+    }
+}
+@media(max-width:487px){
+    .on-hover-move{
+        height: 300px;
+    }
+    .on-hover-move:last-child img{
+        width: 250px;
+    
+    }
+}
+@media(max-width : 1516px){
+    #news-feed{
+        margin-top: 0; 
+    }
+    .contant{
+        height: 700px;
+       }
+       #demo2{
+        height: 700px;
+    }
+    .sub-contant .btn-success{
+        width: 200px;
+    }
+}
+@media(max-width : 766px){
+    #news-feed{
+        margin-top: 4%;
+    }
+    #description{
+        padding-bottom: 0px;
+        background: linear-gradient(to left top, #ff4e50, #f9d423);
+    }
+    .text-description{
+        margin-left: 6px ;
+    }
+}
+@media(max-width : 973px){
+    .hot-news{
+        width: 27%;
+        margin: 5px;
+    }
+    .hot-news img{
+        height: 100%;
+    }
+}
+@media(max-width : 450px){
+    .hot-news{
+     width: 90px;
+    }
+    .carousel-indicators li {
+        width: 40px;
+        height:2px;
+    }
+}
+
+
+@media(max-width : 375px){
+    .hot-news{
+        width: 82px;
+        margin: 5px ;
+    }
+    .hot-news img{
+        height: 50px;
+    }
+}
+
+@media(max-width : 964px){
+ #demo h1, hr{
+     display: none;
+ }
+
+ .sub-contant .btn-success{
+    width: 180px;
+    padding: 3px;
+   
+}
+
+}
+@media(max-width:970px){
+    .contant p{
+        font-size: 13px;
+    }
+    .contant h3{
+        font-size: 25px;
+    }
+    #demo2 p{
+        font-size: 17px;
+    }
+    #look{
+        height: 500px;
+    }
+    .contant, #demo2{
+        height: 500px;
+    }
+    #demo2 button{
+        height: 30px;
+        padding: 0px;
+        width: 500px;
+    }
+    #demo2 .carousel-caption{
+        top: 67%;
+    }
+    .sub-contant .btn-success{
+        margin-bottom: 10px;
+    }
+    .contant,#demo2{
+        clear: both;
+        display: block;
+    }
+}
+@media(max-width:767px){
+    .contant p{
+        font-size: 20px;
+    }
+   
+    #demo2 p{
+        font-size: 21px;
+    }
+    #look{
+        height: fit-content;
+    }
+    .contant, #demo2{
+        height: 550px;
+    }
+
+    #demo2 .carousel-caption{
+        top: 67%;
+    }
+    .sub-contant .btn-success{
+        margin-bottom: 10px;
+    }
+    .contant,#demo2{
+        width: 400px;
+        margin: 10px auto;
+    }
+}
+@media(max-width: 402px){
+    .contant,#demo2{
+        width: 100% ;
+        margin: 10px auto;
+    }
+    .contant p {
+        font-size: 17px;
+    }
+    
+}
+
+
+
+
+ 
+ 
+
+

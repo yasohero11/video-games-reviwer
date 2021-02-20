@@ -1,0 +1,204 @@
+button{    
+    color: white;
+    outline: none !important;
+}
+
+button[type="submit"]{
+    color: white;
+    background: #0168cf;    
+    border: 2px solid #0168cf;
+}
+
+
+
+.boxContiner{
+    background: #2A2A2A;
+}
+
+.box{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: grey;
+    font-size: 40px;
+    
+    transition: 0.3s;
+    border: 2px solid gray;
+}
+
+.toggle-btn{
+    position: relative;  
+    z-index: 1;
+}
+
+
+.toggle-btn:hover .helpButtons{
+    top: -10px;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+.plus{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: grey;
+    border: none;
+    
+    transition: 0.1s;
+    border: 2px solid gray;
+}
+
+.plus {
+    font-size: 25px;
+    color: #2A2A2A;
+    transition: 0.3s;
+}
+
+.plus2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 23px;
+    padding: 0px;
+    
+}
+
+.round-buttons {
+    width: max-content;
+    height: max-content;
+    margin: 15px 10px;
+    padding: 3px 15px;
+    border-radius: 50px;
+    background: gray;
+    border: 2px solid gray;
+    transition: 0.3s;
+}
+
+
+
+.plus:hover,
+.box:hover,
+.round-buttons:hover,
+.plus2:hover {
+    border: 2px solid #0168cf;
+    color: #0168cf;
+}
+
+input[type="file"] {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    height: 60px;
+    outline: 0;
+    width: 200px;
+    height: 45px;
+}
+
+input[type="file"]:after {
+    transition: 200ms all ease;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+    background: #0168cf;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .2);
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f030";
+    padding-left: 10px;
+}
+
+input[type="file"]::before{
+    color: white;
+    font-size: 25px;
+    content: "Add Image";
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 50px;
+}
+
+
+
+.selected {
+    background: #026eda;
+    border: 2px solid #026eda;
+    color: rgb(224, 224, 224);
+}
+
+.selected:hover {
+    background: rgb(224, 224, 224);
+}
+
+#searchIcon,
+.mySearch {
+    transition: 0.3s;
+}
+
+
+
+.mySearch {
+    border-bottom: 2px solid #ffffff;
+}
+
+.searchIcon {
+    color: #ffffff
+}
+
+
+.mySearch:focus {
+    border-bottom: 2px solid #026eda;
+}
+.helpButtons{
+    background: rgb(73, 73, 73,.9) ;
+    position: absolute;
+    padding: 2px 3px 2px 3px;
+    margin: 0px;
+    /*
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    */
+    z-index: -1;
+    opacity: 0;
+    border-radius: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out .3s;
+    width: fit-content;
+}
+.helpButtons .customButton{
+   
+    margin: 0px;
+    opacity: 1;
+    width: 23px;
+    height: 23px;
+    float: left;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: ease-in-out .3s; 
+}
+
+.helpButtons .customButton:first-child{
+    font-size: 13px;
+    color: rgb(236, 57, 57);
+}
+.helpButtons .customButton:last-child{
+    color: rgb(190, 190, 190);
+}
+
+
+.helpButtons .customButton:hover{
+    background: rgb(100, 100, 100);
+}

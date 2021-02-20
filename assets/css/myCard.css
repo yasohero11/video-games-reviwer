@@ -1,0 +1,60 @@
+.myCard{
+    background:#1c1e21;
+    width: 103%;
+    height: fit-content;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 10px;
+    
+}
+
+
+
+.myCard .userImage{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+
+.commentFeild input{
+    margin-left: 5px;
+    height: 38px;
+    border: none;
+    border-radius: 20px ;
+    margin-top: 11px;
+    background: #2A2A2A;
+    outline: none;
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+    width: calc(100% - 45px)
+
+}
+
+.commentFeild{
+    border-radius: 10px;
+}
+
+.comment .userName{
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 5px;
+    height: fit-content;
+}
+.comment .date{
+    color: #727272;
+    margin: 0px;
+    margin-top: 14px;
+    margin-left: 5px;
+}
+
+@media(max-width:375px){
+    .myCard {
+        width: 105%;
+    }
+
+    
+}

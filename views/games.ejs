@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+    <title>Home Page</title>
+
+    <style>
+        .games_card {
+            background: #242424;
+            color: gray;
+            padding: 15px 10px;
+
+            border-radius: 40px;
+            margin-bottom: 10px;
+            width: 280px;
+            margin: 10px;
+
+        }
+
+        .game_link {
+            text-decoration: none !important;
+         
+        }
+
+        .games_card img {
+            border-radius: 40px;
+            margin-bottom: 10px;
+            height: 250px;
+        }
+
+        .card_body {
+            padding: 0px 15px;
+        }
+
+        .game_name {
+            background: -webkit-linear-gradient(right bottom, #FCAB13 80%, #A951EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 170px
+        }
+
+        .box {
+            background: rgb(46, 46, 46);
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+            text-align: center;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            margin: 2px;
+            text-align: center;
+            font-size: 25px;
+            color: gray;
+
+        }
+
+        .game-tag {
+            background: rgb(46, 46, 46);
+            padding: 2px 7px;
+            border-radius: 20px;
+            color: gray;
+            white-space: nowrap;
+            margin: 1px;
+            font-size: 13px;
+        }
+
+        .card_top {
+            position: relative;
+        }
+
+        .game_rate {
+
+            border-radius: 100%;
+            position: absolute;
+            bottom: -20px;
+            right: 10%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding-top: 12px;
+            color: white;
+            font-style: italic;
+            background: linear-gradient(130deg, #ff0057 -30%, #e64a19);
+        }
+
+        @media(max-width: 1102px) {
+            .games_card {
+                width: 300px;
+            }
+
+            .games_card img {
+                height: 280px;
+
+            }
+        }
+
+        @media(max-width: 745px) {
+            .games_card {
+                background: #242424;
+                color: gray;
+                padding: 10px 8px;
+                width: 170px;
+                min-height: 290px !important;
+                border-radius: 20px;
+                margin: 10px 3px;
+            }
+
+            .games_card img {
+                height: 160px;
+                border-radius: 10px;
+            }
+
+            .card_body {
+                padding: 0px 5px;
+
+            }
+
+            .card_body h6 {
+                font-size: 14px;
+            }
+
+            .box {
+
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+
+            }
+
+            .game-tag {
+                font-size: 12px;
+            }
+
+            .info {
+
+                display: none !important;
+            }
+
+            .game_name {
+                margin-top: 10px;
+                font-size: 15px;
+                ;
+            }
+
+            .game_rate {
+                bottom: -10px;
+                width: 40px;
+                height: 40px;
+                font-size: 13px;
+                padding-top: 10px;
+                background: linear-gradient(150deg, #db2461 40%, #ff7e05);
+            }
+
+            .game_name {
+
+                width: 150px
+            }
+        }
+
+        @media(max-width: 320px) {
+            .games_card {
+                width: 155px;
+                margin: 2px;
+            }
+
+            .games_card img {
+                height: 150px;
+                border-radius: 10px;
+            }
+        }
+
+        @media(max-width: 280px) {
+            .games_card {
+                width: 97%;
+
+            }
+
+            .games_card img {
+                height: 300px;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <%- include("parts/websiteCss")%>
+        <%- include("parts/header")%>
+            <%- include("parts/chooses")%>
+                <link rel="stylesheet" href="../assets/css/entitystyle.css">
+                <link rel="stylesheet" href="../assets/css/glowing-button.css">
+
+
+
+                <div class="container-fluid mt-5">
+                    <div class="row justify-content-center">
+                        <% for(game of games) {%>
+                            <a class="game_link" href="games/<%=game._id%>">
+                                <div class="games_card">
+                                    <div class="card_top">
+                                        <img src="../../<%=game.image_path%> " class="img-fluid w-100" alt="">
+                                        <div class="game_rate ">
+                                            <%= game.rateing %>/10
+                                        </div>
+                                    </div>
+
+                                    <div class="card_body">
+                                        <h5 class="game_name">
+                                            <%= game.name %>
+                                        </h5>
+
+                                        <h6>Compony: <%= game.publisher %>
+                                        </h6>
+                                        <h6>Price: <%= game.price %>$</h6>
+
+                                        <div class="row pr-3 pl-3 info">
+
+                                            <div class="col-sm-12  p-0">
+                                                <h6>Tags</h6>
+                                                <div class="row pl-3 pr-3">
+                                                    <% for(tag of game.tags){%>
+                                                        <span class="game-tag ">
+                                                            <%= tag.name %>
+                                                        </span>
+                                                        <%} %>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12  p-0">
+                                                <h6>Platforms</h6>
+
+                                                <div class="row pl-3 pr-3 justify-md-content-end ">
+
+                                                    <% for(platform of game.platforms){%>
+
+                                                        <div class="box">
+                                                            <%- platform.icon %>
+                                                        </div>
+                                                        <%} %>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <% } %>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+</body>
+
+</html>
+<%- include("parts/scripts")%>

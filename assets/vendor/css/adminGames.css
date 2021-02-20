@@ -1,0 +1,39 @@
+body {
+    background: #1c1c1c;
+}
+
+input,
+button {
+    margin: 5px 2px;
+}
+
+input,
+textarea {
+    background: #2A2A2A;
+    border: none;
+    color: white;
+    outline: none
+}
+
+::placeholder {
+    color: rgb(153, 153, 153);
+}
+
+textarea {
+    padding-left: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    clear: both;
+}
+
+h6 {
+    color: white;
+    background: #2A2A2A;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: left;
+    padding: 10px;
+}

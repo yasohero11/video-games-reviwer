@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+    <title>Home Page</title>
+    <%- include('parts/websiteCss'); %>
+        <link rel="stylesheet" href="../assets/css/layoutStyle.css">
+        <link rel="stylesheet" href="../assets/css/productStyle.css">
+        <link rel="stylesheet" href="../assets/css/myCard.css">
+        <style>
+            .game-tags {
+                background: #3e64ff;
+                padding: 2px 5px;
+                border-radius: 20px;
+                color: aliceblue;
+                white-space: nowrap;
+                margin-bottom: 100px;
+                font-size: 16px;
+            }
+        </style>
+
+</head>
+
+<body>
+    <%- include("parts/header")%>
+        <div class="continer-fluid" id="productHead">
+            <div class="row justify-content-md-center justify-content-sm-start justify-content-start p-3">
+
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12 text-sm-left">
+                    <img class="img-fluid w-100" id="game-img" src="<%=game.image_path%>">
+                    <button type="button" class="btn btn-info  ml-0"> (Download)</button>
+                    <button type="button" class="btn btn-info  ml-0">Season Pass</button>
+                </div>
+
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pt-sm-4">
+                    <h2 class="pl-0">
+                        <%=game.name%>
+                    </h2>
+                    <p class="pl-2" style="font-size: 100%;">
+                        <%= game.description%>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center" id="info-card-container">
+                <div class="info-card">
+                    <h5>Developer</h5>
+                    <p>
+                        <%= game.publisher%>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h5>Publisher</h5>
+                    <p>
+                        <%= game.publisher%>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h5>Release Date</h5>
+                    <p>Feb 15, 2019</p>
+                </div>
+                <div class="info-card">
+                    <h5>Tags</h5>
+                    <span>
+                        <% for(tag of game.tags){%>
+                            <i class="game-tags " style="font-size: 16px;">
+                                <%=tag.name %>
+                            </i>
+                            <%} %>
+                    </span>
+                </div>
+                <div class="info-card">
+                    <h5>Rateing</h5>
+                    <p>MATURE 17+</p>
+                </div>
+                <div class="info-card">
+                    <h5>Platform</h5>
+                    <p id="platforms">
+                        <% for(platform of game.platforms){%>
+                            <%- platform.icon %>
+                                <%} %>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="progress">
+            <i class="fas fa-sort-down"></i>
+            <div class="progress-bar" style="width:100%">Good</div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 ">
+                    <h4>Editions</h4>
+                </div>
+
+                <div class="col-md-9" id="seson-pass">
+                    <div>
+                        <img class="img-fluid" src="../assets/img/ubisoft.jpg">
+                    </div>
+                    <div id="desc">
+                        <h5>Seson Pass</h5>
+                        <p>The series originally focused on the World War II setting, with Infinity Ward developing the
+                            first (2003) and second (2005) titles in the series and Treyarch developing the third
+                            (2006).
+                            Call of Duty 4: Modern Warfare (2007) introduced
+                            a new, modern setting (2007) introduced a new, modern settin(2007) introduced a new</p>
+                    </div>
+                    <hr style="background: white; clear: both;width: 90%;">
+                    <div id="seson-pass-bottom">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <div style="float: right;">
+                            <strong>$11.24</strong>
+                            <br>
+                            <p>Sale ends 12/2/2019 at 6:00 pm</p>
+                            <br>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Trailer</h4>
+                </div>
+                <div class="col-md-9 col-sm-12 info"
+                    style="background: #2A2A2A; margin-bottom: 50px; padding: 5px 5px 0px 5px; ">
+                    <iframe style="width: 100%; height: 500px;" class="img-fluid"
+                        src="https://www.youtube.com/embed/k2GMPVXLGbk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Spcifications</h4>
+                        </div>
+                        <div class="col-md-9 col-sm-12 info" id="firstInfo">
+                            <div>
+                                <h5>Minimum</h5>
+                                <h6>OS</h6>
+                                <P>Windows 7 - Service Pack 1 (6.1.7601)</P>
+                                <h6>Processor</h6>
+                                <P>Intel(R) Core(TM) i5-2500K / AMD FX-6300</P>
+                                <h6>Memory</h6>
+                                <P>8GB</P>
+                                <h6>Graphics</h6>
+                                <P>Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB
+                                </P>
+                                <h6>Storage</h6>
+                                <p>150GB</p>
+                                <h6>Other</h6>
+                                <p>Sound Card: DirectX Compatible
+                                </p>
+                                <hr>
+                            </div>
+                            <div>
+                                <h5>Recommended</h5>
+                                <h6>OS</h6>
+                                <P>Windows 10 - April 2018 Update (v1803)
+                                </P>
+                                <h6>Processor</h6>
+                                <P>Intel(R) Core(TM) i7-4770K / AMD Ryzen 5 1500x</P>
+                                <h6>Memory</h6>
+                                <P>12GB</P>
+                                <h6>Graphics</h6>
+                                <P>Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB
+                                </P>
+                                <h6>Storage</h6>
+                                <p>150GB</p>
+                                <h6>Other</h6>
+                                <p>Sound Card: DirectX Compatible
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <h4>Available Platform</h4>
+                        </div>
+                        <div class="col-md-9 info" id="lastInfo">
+                            <div class="container-fluid " style="margin:0px; width: 100%;">
+                                <div class="row justify-content-center" style="width: 100%;">
+                                    <div><i class="fab fa-xbox"></i> XBOX</div>
+                                    <div><i class="fab fa-xbox"></i> PC</div>
+                                    <div><i class="fab fa-playstation"></i> PLAYSTATION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 50px;" id="follow-us-panle">
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <h4>Follow Us</h4>
+                        </div>
+                        <div class="col-md-9" id="follow-us">
+                            <div class="container" id="follow-con">
+                                <div class="row justify-content-center" style="width: 100%;">
+                                    <a href="#"><i class="fab fa-discord"></i></a>
+                                    <a href="#"><i class="fab fa-twitch"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"> </i></a>
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fas fa-globe-europe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <h4>Games FeedBack</h4>
+                        </div>
+                        <div class="col-md-9 col-12 m-0 p-sm-3 p-2" style="background: #2A2A2A;">
+                            <div class="container-fluid justify-content-center pt-3 pb-3 p-0 m-0" width: 100%;">
+
+                                <div class="row justify-content-center" style=" width: 100%;">
+                                    <div class="col-xl-9 col-lg-11 col-md-12 col-sm-12 col-12 m-0 pr-0 "
+                                        style="width: 100%; ">
+                                        <h5 id="commentHead">Comments</h5>
+                                        <!-- start comment card -->
+                                        <div class="myCard comment">
+                                            <div class="row p-0 m-0" style="width: 100%;">
+                                                <img class="userImage"
+                                                    src="https://1.bp.blogspot.com/-4-ezuZxYEtU/XbjzGTFQIrI/AAAAAAABam4/gvP63YUzvl0djWvDa0NSpWm_pc4o4YZ_QCLcBGAsYHQ/s200/4394.jpg">
+                                                <p class="userName">Youssef Osama </p><i class="date">10/10/2020 9:45
+                                                    AM</i>
+                                            </div>
+
+                                            <div class="row p-0 m-0 comment-body " style="width: 100%;">
+                                                <div class="comment-likes">
+                                                    <a href="" class="glowing size-sm dark selected">
+                                                        <i class="fas fa-heart"></i>
+                                                        <p class="number">50</p>
+                                                    </a>
+                                                    <a href="" class="glowing  size-sm dark">
+                                                        <i class="fas fa-heart-broken"></i>
+                                                        <p class="number">43</p>
+                                                    </a>
+                                                </div>
+
+                                                <div class="comment-text">
+                                                    <p class="userComment">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy text ever since the 1500s, when an
+                                                        unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- end comment card -->
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center" style=" width: 100%;">
+                                    <div class="col-xl-9 col-lg-11 col-md-12 col-sm-12 col-12 m-0 pr-0 "
+                                        style="width: 100%; ">
+                                        <div class="myCard commentFeild ">
+                                            <div class="row p-0 m-0 " style="width: 100%; ">
+                                                <img class="userImage"
+                                                    src="https://1.bp.blogspot.com/-4-ezuZxYEtU/XbjzGTFQIrI/AAAAAAABam4/gvP63YUzvl0djWvDa0NSpWm_pc4o4YZ_QCLcBGAsYHQ/s200/4394.jpg">
+                                                <input id="commentInput" type="text" placeholder="Write A Comment...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <%- include("parts/footer")%>
+
+                    <%- include('parts/scripts'); %>
+
+
+                        <script>
+                            const commentInput = document.querySelector("#commentInput")
+                            const commentHead = document.querySelector("#commentHead")
+                            const addComment = async (data) => {
+                                let res = await fetch("/comment/<%= game._id %>", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json"
+                                    },
+                                    body: JSON.stringify(data),
+                                })
+                                try {
+                                    let response = await res.json()
+                                    cb(response)
+                                }
+                                catch (error) {
+                                    console.log(error)
+                                }
+                            }
+
+
+
+                           
+
+
+                            commentInput.addEventListener("keyup", function (e) {
+                                if (event.keyCode === 13) {
+                                    
+                                    
+                                   
+                                    addComment({text: commentInput.value})
+                                }
+                            })
+                        </script>
+                        <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+                        <script>
+
+                            // Enable pusher logging - don't include this in production
+                            Pusher.logToConsole = true;
+
+                            var pusher = new Pusher('933db5119370d8747a2c', {
+                                cluster: 'eu'
+                            });
+
+                            var channel = pusher.subscribe('my-<%= game._id %>');
+                            channel.bind('my-<%= game._id %>', function (data) {
+                                commentHead.insertAdjacentHTML("afterend",`<div class="myCard comment">
+                                            <div class="row p-0 m-0" style="width: 100%;">
+                                                <img class="userImage"
+                                                    src="https://1.bp.blogspot.com/-4-ezuZxYEtU/XbjzGTFQIrI/AAAAAAABam4/gvP63YUzvl0djWvDa0NSpWm_pc4o4YZ_QCLcBGAsYHQ/s200/4394.jpg">
+                                                <p class="userName">Youssef Osama </p><i class="date">10/10/2020 9:45
+                                                    AM</i>
+                                            </div>
+
+                                            <div class="row p-0 m-0 comment-body " style="width: 100%;">
+                                                <div class="comment-likes">
+                                                    <a href="" class="glowing size-sm dark selected">
+                                                        <i class="fas fa-heart"></i>
+                                                        <p class="number">50</p>
+                                                    </a>
+                                                    <a href="" class="glowing  size-sm dark">
+                                                        <i class="fas fa-heart-broken"></i>
+                                                        <p class="number">43</p>
+                                                    </a>
+                                                </div>
+
+                                                <div class="comment-text">
+                                                    <p class="userComment">
+                                                        ${data.data.text}
+                                                        </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                `)
+                            });
+                        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+    <title>Home Page</title>
+
+    <style>
+        .games_card {
+            background: #242424;
+            color: gray;
+            padding: 15px 13px;
+            min-height: 350px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            width: 350px;
+            margin: 10px;
+
+        }
+
+        .games_card img {
+            border-radius: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card_body {
+            padding: 0px 25px;
+        }
+
+        .game_name {
+            background: -webkit-linear-gradient(right bottom, #FCAB13 80%, #A951EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box {
+            background: rgb(46, 46, 46);
+            width: 40px;
+            height: 40px;
+            margin: 2px;
+            text-align: center;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            margin: 2px;
+            text-align: center;
+            font-size: 25px;
+            color: gray;
+
+        }
+
+        .game-tag {
+            background: rgb(46, 46, 46);
+            padding: 2px 7px;
+            border-radius: 20px;
+            color: gray;
+            white-space: nowrap;
+            margin: 1px;
+            font-size: 16px;
+        }
+
+        .card_top {
+            position: relative;
+        }
+
+        .game_rate {
+            background: #d69826;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -20px;
+            right: 10%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding-top: 12px;
+            color: white;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <%- include("parts/websiteCss")%>
+        <%- include("parts/header")%>
+            <%- include("parts/chooses")%>
+                <link rel="stylesheet" href="../assets/css/entitystyle.css">
+                <link rel="stylesheet" href="../assets/css/glowing-button.css">
+
+
+
+                <div class="container-fluid mt-5">
+                    <div class="row justify-content-center">
+                        
+                            <div class="games_card">
+                                <div class="card_top">
+                                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/thumbnails/_thumbnailLarge/Call-of-Duty-Modern-Warfare-Revealed.jpg"
+                                        class="img-fluid" alt="">
+                                    <div class="game_rate orange">
+                                        5/10
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <h5 class="game_name">Call Of Duty</h5>
+
+                                    <h6>compony: company name</h6>
+                                    <h6>price: 16$</h6>
+
+                                    <div class="row pr-3 pl-3">
+
+                                        <div class="col-6 p-0">
+                                            <h6>Tags</h6>
+                                            <div class="row pl-3 pr-3">
+                                                <span class="game-tag ">
+                                                    Kids
+                                                </span>
+                                                <span class="game-tag ">
+                                                    +18
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Action
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Drama
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <h6>Platforms</h6>
+                                            <div class="row pl-3 pr-3 justify-content-end ">
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="games_card">
+                                <div class="card_top">
+                                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/thumbnails/_thumbnailLarge/Call-of-Duty-Modern-Warfare-Revealed.jpg"
+                                        class="img-fluid" alt="">
+                                    <div class="game_rate orange">
+                                        5/10
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <h5 class="game_name">Call Of Duty</h5>
+
+                                    <div class="row pr-3 pl-3">
+
+                                        <div class="col-6 p-0">
+                                            <h6>Tags</h6>
+                                            <div class="row pl-3 pr-3">
+                                                <span class="game-tag ">
+                                                    Kids
+                                                </span>
+                                                <span class="game-tag ">
+                                                    +18
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Action
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Drama
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <h6>Platforms</h6>
+                                            <div class="row pl-3 pr-3 justify-content-end ">
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        
+                            <div class="games_card">
+                                <div class="card_top">
+                                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/thumbnails/_thumbnailLarge/Call-of-Duty-Modern-Warfare-Revealed.jpg"
+                                        class="img-fluid" alt="">
+                                    <div class="game_rate orange">
+                                        5/10
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <h5 class="game_name">Call Of Duty</h5>
+
+                                    <div class="row pr-3 pl-3">
+
+                                        <div class="col-6 p-0">
+                                            <h6>Tags</h6>
+                                            <div class="row pl-3 pr-3">
+                                                <span class="game-tag ">
+                                                    Kids
+                                                </span>
+                                                <span class="game-tag ">
+                                                    +18
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Action
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Drama
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <h6>Platforms</h6>
+                                            <div class="row pl-3 pr-3 justify-content-end ">
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+                        
+                            <div class="games_card">
+                                <div class="card_top">
+                                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/thumbnails/_thumbnailLarge/Call-of-Duty-Modern-Warfare-Revealed.jpg"
+                                        class="img-fluid" alt="">
+                                    <div class="game_rate orange">
+                                        5/10
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <h5 class="game_name">Call Of Duty</h5>
+
+                                    <div class="row pr-3 pl-3">
+
+                                        <div class="col-6 p-0">
+                                            <h6>Tags</h6>
+                                            <div class="row pl-3 pr-3">
+                                                <span class="game-tag ">
+                                                    Kids
+                                                </span>
+                                                <span class="game-tag ">
+                                                    +18
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Action
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Drama
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <h6>Platforms</h6>
+                                            <div class="row pl-3 pr-3 justify-content-end ">
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="games_card">
+                                <div class="card_top">
+                                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/thumbnails/_thumbnailLarge/Call-of-Duty-Modern-Warfare-Revealed.jpg"
+                                        class="img-fluid" alt="">
+                                    <div class="game_rate orange">
+                                        5/10
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <h5 class="game_name">Call Of Duty</h5>
+
+                                    <div class="row pr-3 pl-3">
+
+                                        <div class="col-6 p-0">
+                                            <h6>Tags</h6>
+                                            <div class="row pl-3 pr-3">
+                                                <span class="game-tag ">
+                                                    Kids
+                                                </span>
+                                                <span class="game-tag ">
+                                                    +18
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Action
+                                                </span>
+                                                <span class="game-tag ">
+                                                    Drama
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <h6>Platforms</h6>
+                                            <div class="row pl-3 pr-3 justify-content-end ">
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="box">
+                                                    <i class="fab fa-windows" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="container-fluid  ">
+                    <div class="row justify-content-center">
+                        <%for( var i=0; i < games.length;i++ ){%>
+                            <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+                                <img class="card-img-top small3d" src="<%=games[i].imagePath%>" alt="Card image cap">
+                                <div class="card-body row small3d" style="display: inline-block; width: 100%;">
+                                    <h5 class="card-title small3dfortext">
+                                        <%=games[i].name%>
+                                    </h5>
+                                    <p class="card-text small3dfortext">
+                                        <%=games[i].smalldis%>
+                                    </p>
+                                    <hr style="background: white; clear: both;width: 90%;">
+                                    <strong class="small3dfortext">Price : $<%=games[i].price%></strong>
+                                    <a href="../game/<%=games[i].id%>" class="btn btn-primary small3d"
+                                        style="display: inline-block; float: right;">Go somewhere</a>
+                                </div>
+                            </div>
+                            <%}%>
+
+                    </div>
+
+                </div>
+
+
+</body>
+
+</html>
+<%- include("parts/scripts")%>

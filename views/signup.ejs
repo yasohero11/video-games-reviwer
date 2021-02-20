@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1b6dbc5d1f.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Signup/signin</title>
+    <link rel="stylesheet" href="../assets/css/layoutStyle.css">
+    <link rel="stylesheet" href="../assets/css/signupStyle.css">
+    <style>
+        .dis,
+        #logdis,
+        #loginPassDis {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <%- include("parts/header")%>
+
+        <div class="container-fluid" style="margin-top: 50px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12" id="con">
+                    <div id="motion" class="right"></div>
+                    <form id="loginForm">
+                        <div><button id="toSignup" name="ahmed" style="border-radius: 20px; padding-left: 6px ;"
+                                type="button" class="btn btn-outline-dark"><i class="fas fa-chevron-left"></i> Sign
+                                up</button></div>
+                        <div class="follow_us" style="margin: 20px 0px 80px 0px ;">
+                            <button type="button" class="btn btn-outline-dark"> <i class="fab fa-facebook"></i></button>
+                            <button type="button" class="btn btn-outline-dark"> <i class="fab fa-google"></i></button>
+                            <button type="button" class="btn btn-outline-dark"> <i
+                                    class="fab fa-instagram"></i></button>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control " id="email" name="email">
+                            <div id="logdis"></div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control " id="pwd" name="password">
+                            <div id="loginPassDis"></div>
+                        </div>
+                        <div class="form-group form-check" id="cccc">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+
+                        </div>
+                        <div id="submitBtn" style="text-align: center;"><button type="submit" class="btn btn-primary"
+                                id="btlogin">Submit</button></div>
+
+                    </form>
+
+                    <form id="signupForm" style="background: white;">
+                        <div style="text-align: right;"><button id="toLogin"
+                                style="border-radius: 20px; padding-right: 6px ;" type="button"
+                                class="btn btn-outline-dark"> Login <i class="fas fa-chevron-right"></i></button></div>
+                        <div class="follow_us" style="margin-top: 20px ;">
+                            <button type="button" class="btn btn-outline-dark"> <i class="fab fa-facebook"></i></button>
+                            <button type="button" class="btn btn-outline-dark"> <i class="fab fa-google"></i></button>
+                            <button type="button" class="btn btn-outline-dark"> <i
+                                    class="fab fa-instagram"></i></button>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control myform" id="name" name="name">
+                            <div class="dis"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control myform" id="email2" name="email">
+                            <div class="dis" id="emailDis"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control myform" id="password2" name="password">
+                            <div class="dis" id="passDis"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm">Confirm Password:</label>
+                            <input type="password" class="form-control myform" id="confirm" name="confirmPassword">
+                            <div class="dis" id="confirmDis"></div>
+                        </div>
+                        <div id="submitBtn" style="text-align: center;"><button type="submit"
+                                class="btn btn-primary">Submit</button></div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <%- include('parts/chat')%>
+            <script src="../assets/javascripts/validation.js"></script>
+            <script>
+                var toLogin = document.getElementById("toLogin")
+                var toSignup = document.getElementById("toSignup")
+                var loginForm = document.getElementById("loginForm")
+                var signupForm = document.getElementById("signupForm")
+                var motion = document.getElementById("motion")
+
+
+                toSignup.addEventListener("click", () => {
+                    motion.classList.remove("right")
+                    motion.classList.add("left")
+
+                    setTimeout(() => {
+                        loginForm.style.display = "none"
+                        signupForm.style.display = "list-item"
+                    }, 400)
+                })
+                toLogin.addEventListener("click", () => {
+                    motion.classList.remove("left")
+                    motion.classList.add("right")
+
+                    setTimeout(() => {
+                        loginForm.style.display = "list-item"
+                        signupForm.style.display = "none"
+                    }, 400)
+                    toSignup.classList.add("bt")
+                })
+
+
+
+
+                const addUser = async (data) => {
+                    let res = await fetch("/auth", {
+                        method: "POST",
+                        
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data),
+                    })
+                    try {
+                        let response = await res.json()
+                        console.log(response)
+                    }
+                    catch (error) {
+                        console.log(error)
+                    }
+                }
+                const logIn = async (data) => {
+                    let res = await fetch("/auth/login", {
+                        method: "POST",
+                        
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data),
+                    })
+                    try {
+                        let response = await res.json()
+                        console.log(response)
+                    }
+                    catch (error) {
+                        console.log(error)
+                    }
+                }
+
+                signupForm.addEventListener("submit", function (e) {
+                    e.preventDefault()
+                    var data = new FormData(this)
+                    let obj = {}
+                    data.forEach((v,k)=>{
+                        console.log(k + " " + v)
+                        obj[k] = v
+                    })
+                    addUser(obj)
+                })
+
+                loginForm.addEventListener("submit", function (e) {
+                    e.preventDefault()
+                    var data = new FormData(this)
+                    let obj = {}
+                    data.forEach((v,k)=>{
+                        console.log(k + " " + v)
+                        obj[k] = v
+                    })
+                    logIn(obj)
+                })
+
+
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1b6dbc5d1f.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/layoutStyle.css">
+    <link rel="stylesheet" href="../assets/css/contactstyle.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Hello, world!</title>
+
+</head>
+
+<body>
+    <%- include("parts/header")%>
+        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-4">
+                <h3 style="color: white">Get help with GameMaster</h3>
+                <h5><span style="color:rgb(38, 255, 9)">Drop US</span> <span style="color:white">Message</span> </h5>
+                <br>
+                <div class="form-group row">
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Your Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <div class="col-sm-6">
+
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="color:rgb(38, 255, 9)">How can we help?</label>
+                    <br>
+                    <textarea cols="60" rows="5" placeholder="Type Your Comment Here"></textarea>
+                </div>
+                <button id="requestbutton" type="submit">send request</button>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <h6 style="color: white">CONTACT US</h6>
+                <h3><span style="color: rgb(38, 255, 9)">Get In</span><span style="color: white">Touch</span></h3>
+                <p style="color: white">blah blah blah</p>
+                <i class="fas fa-phone-alt">  <span>01128933650</span> </i>
+                <br>
+                <i class="far fa-envelope-open"> <span >game@abdosoltan.me</span> </i>
+                <br>
+                <i class="fas fa-map-marker-alt"> <span>Future City</span> </i>
+                <h6 style="color: white">FOLLOW ON:</h6>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <%- include("parts/footer")%>
+		<%- include('parts/chat')%>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+#picker{ 
+    background: #242424
+}
+
+#picker a{
+    color: whitesmoke;
+    /*background-image: linear-gradient(140deg,#FCAB13 -1% ,#A951EB 100% );*/
+    background: none;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    margin: 5px 0px;
+    overflow: hidden;
+    /*margin: 2px 20px*/
+    
+}
+#picker a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:170%;
+    height:100%;
+    background:linear-gradient(140deg,#FCAB13 50% ,#A951EB 100% );;
+    z-index: -1; /* eh da ?*/
+    transition:  0.4s;
+  
+  }
+#picker a:hover::before{
+    transform: translateX(80px) ;
+  }
